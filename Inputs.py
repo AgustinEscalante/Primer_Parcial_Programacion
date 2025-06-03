@@ -28,8 +28,8 @@ def pedir_puntaje(jurado: int) -> int:
     while True:
         entrada = input(f"Ingrese puntaje del Jurado {jurado+1} (1-10): ")
         bandera = True
-        for caracter in entrada:
-            if ord(caracter) < 48 or ord(caracter) > 57:
+        for i in entrada:
+            if ord(i) < 48 or ord(i) > 57:
                 bandera = False
                 break
         if bandera:
